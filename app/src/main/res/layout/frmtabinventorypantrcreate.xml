@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <android.support.v7.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:background="#E0E0E0"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rvTempList"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scrollbars="vertical" />
+        </LinearLayout>
+
+
+    </android.support.v7.widget.LinearLayoutCompat>
+    <android.support.design.widget.FloatingActionButton
+        android:src="@drawable/ic_delete"
+        android:id="@+id/fabClearLog"
+        app:fabSize="normal"
+        android:layout_width="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="26dp"
+        android:layout_height="wrap_content" />
+    <android.support.design.widget.FloatingActionButton
+        android:src="@drawable/ic_addnote"
+        android:id="@+id/fabAdd"
+        app:fabSize="normal"
+        android:layout_width="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_marginBottom="26dp"
+        android:layout_marginRight="100dp"
+        android:layout_height="wrap_content" />
+    <android.support.design.widget.FloatingActionButton
+        android:src="@drawable/ic_moveb"
+        android:id="@+id/fabCreateContainer"
+        app:fabSize="normal"
+        android:layout_width="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_marginBottom="26dp"
+        android:layout_marginRight="300dp"
+        android:layout_height="wrap_content" />
+
+
+
+
+
+</android.support.design.widget.CoordinatorLayout>

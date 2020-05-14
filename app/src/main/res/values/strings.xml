@@ -1,0 +1,59 @@
+<resources>
+    <string name="app_name">Inventario</string>
+    <string name="sCodigoEmpleado">Ingresar el codigo de empleado</string>
+    <string name="sConectarse">Conectarse</string>
+    <string name="sLimpiar">Limpiar</string>
+    <string name="sTomaInv">Toma Inventario</string>
+    <string name="sDespacho">Despacho Cliente</string>
+    <string name="sRecepcion">Recepción Proveedor</string>
+    <string name="sReubicacion">Re-ubicación</string>
+    <string name="sValidacionInv">Validación Inventario</string>
+    <string name="sTomaDatos">Toma de datos</string>
+    <string name="sHistorial">Historial</string>
+    <string name="sSinc">Sincronizar</string>
+    <string name="sSelecArea"> Area:</string>
+    <string name="sUbicacion"> Ubicación: </string>
+    <string name="sIngresarCodigo"> Ingrese un código</string>
+    <string name="sBuscar">Buscar</string>
+    <string name="sVer">Ver</string>
+    <string name="sEditar">Editar</string>
+    <string name="sPeso">Peso:</string>
+    <string name="sCambioPeso">Peso</string>
+    <string name="sCambiarPeso">Cambiar peso</string>
+    <string name="sAceptar">Aceptar</string>
+    <string name="sSalir">Salir</string>
+    <string name="sDespachoArea">Despacho entre areas</string>
+    <string name="sRecepcionArea">Recepción entre areas</string>
+    <string name="sTomaInvInicial">Toma Inventario Inicial</string>
+    <string name="sLastLog">Ultimo Registro</string>
+    <string name="sRecepcionProveedor">Recepción de proveedor</string>
+    <string name="sAdd">Agregar</string>
+    <string name="sContainerNumber">Código de producto: </string>
+    <string name="sQuantity">Cantidad: </string>
+    <string name="sDesc">Descripción: </string>
+    <string name="sEdit">Editar</string>
+    <string name="sDelete">Eliminar</string>
+    <string name="sCode">Código: </string>
+    <string name="sTintoLote">Lotes </string>
+    <string name="sPackingList">Packing List </string>
+    <string name="sPackingListNumber">PL No.: </string>
+    <string name="sGroup">Agrupar contenedores</string>
+    <string name="sDeleteContainer">Se eliminara el contenedor seleccionado. ¿Esta seguro de realizar esta acción?</string>
+    <string name="sRemoveContainer">Se re-ubicara el contenedor seleccionado. ¿Esta seguro de realizar esta acción?</string>
+    <string name="sReturnContainer">Se regresara el contenedor seleccionado. ¿Esta seguro de realizar esta acción?</string>
+    <string name="sExitApp">Esta saliendo de la aplicación. ¿Esta seguro de realizar esta acción?</string>
+    <string name="sConfirmation">Se enviara el lote a ser procesado, no se podra realizar cambios una vez se envie. ¿Esta seguro de realizar esta acción?</string>
+    <string name="sCompleteSinc">Sincronizacion completa. ¿Esta seguro de realizar esta acción?</string>
+    <string name="sPackingListCheck">Revision PL</string>
+    <string name="sPackingListGet">Obtener PL</string>
+    <string name="sPackingListUpdate">Limpiar check</string>
+    <string name="sPackingListDelete">Borrar todo</string>
+    <string name="sPackingListDeleteWarning">Borrara toda la informacion almacenada. ¿Esta seguro de realizar esta acción?</string>
+
+    <string-array name="sParts">
+        <item>CUERP</item>
+        <item>RIBS</item>
+        <item>JERSE</item>
+    </string-array>
+
+</resources>

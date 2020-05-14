@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:elevation="3dp"
+        android:background="@color/colorPrimary"
+        android:orientation="horizontal">
+
+        <android.support.v7.widget.AppCompatImageView
+            android:layout_width="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:id="@+id/icon"
+            android:src="@drawable/ic_delete"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_size_modal_title"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/icon"
+            android:textColor="@color/colorWhite"
+            android:text="Regresar"/>
+    </RelativeLayout>
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginTop="5dp"
+    android:layout_marginBottom="20dp"
+    android:orientation="vertical" >
+            <TextView
+                android:layout_width="match_parent"
+                android:textSize="@dimen/text_size_modal_description"
+                android:textColor="@color/colorBlack"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_height="wrap_content"
+                android:text="@string/sReturnContainer"
+                />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="25dp"
+            android:orientation="horizontal" >
+            <TextView
+                android:layout_width="wrap_content"
+                android:textSize="@dimen/text_size_modal_description"
+                android:layout_marginRight="10dp"
+                android:id="@+id/lblAreatxt"
+                android:layout_height="wrap_content"
+                android:text="@string/sSelecArea"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:textSize="@dimen/text_size_modal_description"
+                android:id="@+id/lblArea"
+                android:layout_toRightOf="@+id/lblAreatxt"
+                android:textColor="@color/colorBlack"
+                android:layout_height="wrap_content"
+                android:text="-"
+            />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+
+            android:orientation="horizontal" >
+            <TextView
+                android:layout_width="wrap_content"
+                android:textSize="@dimen/text_size_modal_description"
+                android:layout_marginRight="10dp"
+                android:id="@+id/lblBintxt"
+                android:layout_height="wrap_content"
+                android:text="Fecha:"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:textSize="@dimen/text_size_modal_description"
+                android:id="@+id/lblBin"
+                android:layout_toRightOf="@+id/lblBintxt"
+                android:textColor="@color/colorBlack"
+                android:layout_height="wrap_content"
+                android:text="-"
+                />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+
+            android:orientation="horizontal" >
+            <TextView
+                android:layout_width="wrap_content"
+                android:textSize="@dimen/text_size_modal_description"
+                android:layout_marginRight="10dp"
+                android:id="@+id/lblcontainertxt"
+                android:layout_height="wrap_content"
+                android:text="@string/sCode"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:textSize="@dimen/text_size_modal_description"
+                android:layout_toRightOf="@+id/lblcontainertxt"
+                android:id="@+id/lblCode"
+                android:textColor="@color/colorBlack"
+                android:layout_height="wrap_content"
+                android:text="-"
+                />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="10dp"
+        android:orientation="horizontal"
+        >
+        <android.support.v7.widget.AppCompatImageButton
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:layout_margin="5dp"
+            android:src="@drawable/ic_cancel"
+            android:elevation="2dp"
+            android:background="@drawable/ripple_effect_red"
+            android:id="@+id/btnClose"/>
+        <android.support.v7.widget.AppCompatImageButton
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:layout_margin="5dp"
+            android:elevation="2dp"
+            android:background="@drawable/ripple_effect_green"
+            android:src="@drawable/ic_send"
+            android:id="@+id/btnSearch" />
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.inventario.hilcasa.hilcasainventario">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".frmLogin"
+            android:screenOrientation="sensorPortrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".frmMenu"
+            android:parentActivityName=".frmLogin"
+            android:configChanges="keyboard"
+            android:screenOrientation="sensorPortrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".frmLogin" />
+        </activity>
+        <activity
+            android:name=".frmInventoryCheck"
+            android:parentActivityName=".frmMenu"
+            android:configChanges="keyboardHidden"
+            android:windowSoftInputMode="adjustPan"
+            android:screenOrientation="sensorPortrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".frmMenu" />
+        </activity>
+
+        <activity
+            android:name=".frmInventoryInAreaContainer"
+            android:parentActivityName=".frmMenu"
+            android:windowSoftInputMode="adjustPan"
+            android:screenOrientation="sensorPortrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".frmMenu" />
+        </activity>
+
+        <activity
+            android:name=".frmGroup"
+            android:parentActivityName=".frmMenu"
+            android:windowSoftInputMode="adjustPan"
+            android:screenOrientation="sensorPortrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".frmMenu" />
+        </activity>
+        <activity
+            android:name=".frmTintoGroup"
+            android:parentActivityName=".frmMenu"
+            android:windowSoftInputMode="adjustPan"
+            android:screenOrientation="sensorPortrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".frmMenu" />
+        </activity>
+        <activity
+            android:name=".frmInventoryAdd"
+            android:parentActivityName=".frmMenu"
+            android:windowSoftInputMode="adjustPan"
+            android:screenOrientation="sensorPortrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".frmMenu" />
+        </activity>
+
+        <activity
+            android:name=".frmInventoryOutAreaContainer"
+            android:parentActivityName=".frmMenu"
+            android:windowSoftInputMode="adjustPan"
+            android:screenOrientation="sensorPortrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".frmMenu" />
+        </activity>
+
+        <activity
+            android:name=".frmLastLog"
+            android:windowSoftInputMode="adjustPan"
+            android:screenOrientation="sensorPortrait">
+        </activity>
+
+        <activity
+            android:name=".frmInventoryInVendorContainer"
+            android:parentActivityName=".frmMenu"
+            android:windowSoftInputMode="adjustPan"
+            android:screenOrientation="sensorPortrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".frmMenu" />
+        </activity>
+        <activity
+            android:name=".frmPantrInventoryContainer"
+            android:parentActivityName=".frmMenu"
+            android:windowSoftInputMode="adjustPan"
+            android:screenOrientation="sensorPortrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".frmMenu" />
+        </activity>
+        <activity
+            android:name=".frmInventoryRelocationContainer"
+            android:parentActivityName=".frmMenu"
+            android:windowSoftInputMode="adjustPan"
+            android:screenOrientation="sensorPortrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".frmMenu" />
+        </activity>
+
+
+        <activity
+            android:name=".frmPrueba"
+            android:parentActivityName=".frmMenu"
+            android:windowSoftInputMode="adjustPan"
+            android:screenOrientation="sensorPortrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".frmMenu" />
+        </activity>
+
+        <activity
+            android:name=".frmOfflineM"
+            android:parentActivityName=".frmMenu"
+            android:windowSoftInputMode="adjustPan"
+            android:screenOrientation="sensorPortrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".frmMenu" />
+        </activity>
+
+        <activity
+            android:name=".frmInventoryOutClientContainer"
+            android:parentActivityName=".frmMenu"
+            android:windowSoftInputMode="adjustPan"
+
+            android:screenOrientation="sensorPortrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".frmMenu" />
+        </activity>
+
+        <activity
+            android:name=".frmPlCheckListContainer"
+            android:parentActivityName=".frmMenu"
+            android:windowSoftInputMode="adjustPan"
+            android:screenOrientation="sensorPortrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".frmMenu" />
+        </activity>
+        <activity
+            android:name=".frmMarketDispatchContainer"
+            android:parentActivityName=".frmMenu"
+            android:windowSoftInputMode="adjustPan"
+            android:screenOrientation="sensorPortrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".frmMenu" />
+        </activity>
+    </application>
+
+</manifest>

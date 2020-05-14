@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_weight="3.4"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_weight="2"
+                android:text="PackingList"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/text_size_container_title"
+                />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:layout_weight="4"
+                    android:text="-"
+                    android:id="@+id/lblPackingListId"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/text_size_container_title"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:layout_weight="2"
+                    android:text="Ruta:"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/text_size_container_title"
+                    />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:layout_weight="4"
+                    android:text="-"
+                    android:id="@+id/lblRoute"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/text_size_container_title"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:layout_weight="2"
+                    android:text="Accion:"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/text_size_container_title"
+                    />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:layout_weight="4"
+                    android:text="-"
+                    android:id="@+id/lblCheckpoint"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/text_size_container_title"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:layout_weight="2"
+                    android:text="Total(lb):"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/text_size_container_title"
+                    />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:layout_weight="4"
+                    android:text="-"
+                    android:id="@+id/lblTotalQty"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/text_size_container_title"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:layout_weight="2"
+                    android:text="Total ecnontrados:"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/text_size_container_title"
+                    />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:layout_weight="4"
+                    android:text="-"
+                    android:id="@+id/lblQtyScan"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/text_size_container_title"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:layout_weight="2"
+                    android:text="Total faltantes:"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/text_size_container_title"
+                    />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:layout_weight="4"
+                    android:text="-"
+                    android:id="@+id/lblQtyMiss"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/text_size_container_title"
+                    />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+</android.support.design.widget.CoordinatorLayout>

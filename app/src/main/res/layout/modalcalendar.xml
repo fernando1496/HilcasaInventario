@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:elevation="3dp"
+        android:background="@color/colorPrimary"
+        android:orientation="horizontal">
+
+        <android.support.v7.widget.AppCompatImageView
+            android:layout_width="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:id="@+id/icon"
+            android:src="@drawable/ic_datetime"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_size_modal_title"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/icon"
+            android:textColor="@color/colorWhite"
+            android:text="Fecha y hora"/>
+
+
+    </RelativeLayout>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="30dp"
+    android:layout_marginRight="30dp"
+    android:layout_marginTop="20dp"
+    android:layout_marginBottom="10dp"
+    android:orientation="vertical" >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+    <TextView
+        android:layout_width="0dp"
+        android:layout_weight="8"
+        android:textSize="@dimen/text_size_modal_description"
+        android:id="@+id/lblOldDate"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content"
+        android:text="Ultima: "
+        />
+
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="7dp"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/ic_delete_small"
+            android:id="@+id/btnClearDate"
+            android:elevation="3dp"
+            android:textSize="20dp"
+            android:background="@drawable/ripple_effect_red"
+            android:layout_height="@dimen/modal_button_height" />
+    </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:textSize="@dimen/text_size_modal_description"
+                android:layout_marginTop="10dp"
+                android:layout_height="wrap_content"
+                android:text="Fecha: "
+                />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+            <EditText
+            android:layout_width="0dp"
+            android:layout_weight="6"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtDate"
+            android:layout_gravity="bottom"
+            android:maxLines="1"
+            android:textSize="@dimen/text_size_modal_description"
+            android:inputType="none"
+            android:focusable="false"
+            android:enabled="false"
+            android:layout_marginBottom="5dp"
+            />
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="7dp"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/ic_calendar"
+            android:id="@+id/btnDate"
+            android:elevation="3dp"
+            android:textSize="20dp"
+            android:background="@drawable/ripple_effect_yellow"
+            android:layout_height="@dimen/modal_button_height" />
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:textSize="@dimen/text_size_modal_description"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content"
+        android:text="Hora: "
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_weight="6"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtTime"
+            android:maxLines="1"
+            android:focusable="false"
+            android:layout_gravity="bottom"
+            android:inputType="none"
+            android:enabled="false"
+            android:textSize="@dimen/text_size_modal_description"
+            android:layout_marginBottom="5dp"
+            />
+
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="7dp"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/ic_clock"
+            android:id="@+id/btnTime"
+            android:elevation="3dp"
+            android:textSize="20dp"
+            android:background="@drawable/ripple_effect_yellow"
+            android:layout_height="@dimen/modal_button_height" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="10dp"
+        android:orientation="horizontal"
+        >
+        <android.support.v7.widget.AppCompatImageButton
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:layout_margin="5dp"
+            android:src="@drawable/ic_cancel"
+            android:elevation="2dp"
+            android:background="@drawable/ripple_effect_red"
+            android:id="@+id/btnClose"/>
+        <android.support.v7.widget.AppCompatImageButton
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:layout_margin="5dp"
+            android:elevation="2dp"
+            android:background="@drawable/ripple_effect_green"
+            android:src="@drawable/ic_send"
+            android:id="@+id/btnSearch" />
+
+    </LinearLayout>
+
+</LinearLayout>
+    </LinearLayout>

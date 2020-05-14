@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <android.support.design.widget.FloatingActionButton
+        android:src="@drawable/ic_delete"
+        android:id="@+id/fabClearLog"
+        app:fabSize="normal"
+        android:layout_width="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="26dp"
+        android:layout_height="wrap_content" />
+
+    <android.support.v7.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent"
+        android:id="@+id/linearLayoutCompat2">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_size_large"
+                android:text="Cliente: "
+                android:layout_marginTop="10dp"
+                android:layout_weight="1.5"
+                android:layout_marginLeft="5dp"
+                />
+            <android.support.v7.widget.AppCompatSpinner
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="6"
+                android:layout_marginRight="5dp"
+                android:id="@+id/spArea"
+                android:layout_marginTop="10dp"
+                ></android.support.v7.widget.AppCompatSpinner>
+        </LinearLayout>
+        <!--<LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1.5"
+                android:layout_height="wrap_content"
+                android:text="@string/sUbicacion"
+                android:textSize="@dimen/text_size_large"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="5dp"
+                />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_size_large_x"
+                android:text="-"
+                android:layout_weight="4"
+                android:textColor="@color/colorBlack"
+                android:id="@+id/lblBin"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="5dp"
+                />
+        </LinearLayout>-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="5dp"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+            <EditText
+                android:layout_width="0dp"
+                android:layout_weight="6"
+                android:layout_height="match_parent"
+                android:id="@+id/txtCode"
+                android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890- "
+                android:maxLines="1"
+                android:hint="@string/sIngresarCodigo"
+                android:textSize="@dimen/text_size_large_x"
+                />
+            <ImageButton
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="7dp"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/ic_send"
+                android:id="@+id/btnSearch"
+                android:elevation="3dp"
+                android:textSize="20dp"
+                android:background="@drawable/custombutton"
+                android:layout_height="50dp" />
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:background="#E0E0E0"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rvLog"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scrollbars="vertical" />
+
+        </LinearLayout>
+
+
+    </android.support.v7.widget.LinearLayoutCompat>
+
+
+</android.support.design.widget.CoordinatorLayout>
